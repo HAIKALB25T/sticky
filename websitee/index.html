@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.content {
+  padding: 16px;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Ngeteh.</h1>
+  <p>Balikan ceria mu dengan ngeteh.</p>
+</div>
+
+ <div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="news.html">Tentang</a>
+  <a href="contact.html">Contact</a>
+</div>
+</div>
+
+<div class="content">
+  <h3 align="center">TEH</h3>
+  <p align="justify">Teh adalah minuman yang mengandung kafeina, sebuah infusi yang dibuat dengan cara menyeduh daun, pucuk daun, atau tangkai daun yang dikeringkan dari tanaman Camellia sinensis dengan air panas.stilah "teh" juga digunakan untuk minuman yang dibuat dari buah, rempah-rempah atau tanaman obat lain yang diseduh, misalnya, teh rosehip, camomile, krisan dan jiaogulan. Teh yang tidak mengandung daun teh disebut teh herbal.Teh merupakan sumber alami kafeina, teofilin, dan antioksidan dengan kadar lemak, karbohidrat atau protein mendekati nol persen. Cita rasa sedikit pahit dari teh merupakan kenikmatan tersendiri dari teh.Teh bunga dengan campuran kuncup bunga melati yang disebut teh melati atau teh wangi melati merupakan jenis teh yang paling populer di Indonesia[1]. Konsumsi teh di Indonesia sebesar 0,8 kilogram per kapita per tahun, masih jauh di bawah negara-negara lain di dunia, walaupun Indonesia merupakan negara penghasil teh terbesar nomor lima di dunia</p>
+  
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
